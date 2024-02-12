@@ -774,3 +774,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+IntroToAlgorithmsAnalysis/*.txt
+*.txt
