@@ -12,19 +12,35 @@ namespace IntroToAlgorithmsAnalysis
 			//  1.40  mins for 8k
 			// 800 seconds for 16k
 
-			var ints = In.ReadInts("8Kints.txt").ToArray();
+			//var ints = In.ReadInts("1Kints.txt").ToArray();
+
+			//var watch = new Stopwatch();
+			//watch.Start();
+
+
+			//var triplets = ThreeSum.Count(ints);
+
+			//watch.Stop();
+
+			//Console.WriteLine($"The number of \"zero-some\" triplets: {triplets}");
+			//Console.WriteLine($"Time taken: {watch.Elapsed}");
+
+			//Console.ReadLine();
+
+
+
+			var ints = In.ReadInts("1Kints.txt").ToArray();
 
 			var watch = new Stopwatch();
 			watch.Start();
 
 
-			var triplets = ThreeSum.Count(ints);
+			var triplets = ThreeSum.CountBetter(ints);
 
-		    watch.Stop();
+			watch.Stop();
 
 			Console.WriteLine($"The number of \"zero-some\" triplets: {triplets}");
 			Console.WriteLine($"Time taken: {watch.Elapsed}");
-			//Console.ReadLine();
 		}
 	}
 }
